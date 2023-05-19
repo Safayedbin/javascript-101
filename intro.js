@@ -1,0 +1,1 @@
+const firstString = 'Hello world';
