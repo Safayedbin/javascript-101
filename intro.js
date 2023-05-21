@@ -109,3 +109,19 @@ console.log('\nprinting Object after deleting new property =\n', newObj);
 /////////////////////////////////////////////////////////
 
 // all syntax are same as C language
+
+a=(Math.random())%100
+
+if (a>= 90){
+console.log('You got A*');
+
+}
+
+else if (a < 90 && a>= 80){
+    console.log('You got B*');
+
+
+}
+else{
+    console.log('You are below average');
+}
