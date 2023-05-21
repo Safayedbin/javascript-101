@@ -99,3 +99,13 @@ console.log('\nprinting Object after adding new property =\n', newObj);
 delete newObj.newkey
 
 console.log('\nprinting Object after deleting new property =\n', newObj);
+
+
+
+/////////////////////////////////////////////////////////
+
+//              Conditional and Control statment
+
+/////////////////////////////////////////////////////////
+
+// all syntax are same as C language
