@@ -25,8 +25,11 @@ var myString= 'Safayed';
 
 
 // Array also have no issues in saving diferent 
-//datatypes in it 
+//datatypes in it for different index
 var myArray= [1, 'strongman', 2.366];
+
+
+
 
 console.log('Array is printer here\n', myArray);
 //array accessing method
@@ -110,18 +113,93 @@ console.log('\nprinting Object after deleting new property =\n', newObj);
 
 // all syntax are same as C language
 
-a=(Math.random())%100
+
+//if statament
+a=(Math.random())*100
 
 if (a>= 90){
 console.log('You got A*');
 
 }
 
-else if (a < 90 && a>= 80){
+else if (a < 90 && a>= 70){
     console.log('You got B*');
+
+
+}
+else if (a < 70 && a>= 50){
+    console.log('You got C*');
 
 
 }
 else{
     console.log('You are below average');
+}
+
+
+//loop statament
+
+
+//for 
+
+for(i=0; i<=10; i++){
+    console.log('for loop ', i);
+}
+console.log('\n')
+//while
+a=0;
+while (a<10){
+    a++
+    console.log('while loop ', a);
+}
+console.log('\n')
+//For in
+
+//to iterate all values inside a Object
+
+var colors = {
+    primary: 'RED',
+    secondary: 'Yellow',
+    teritary: 'CYAN'
+}
+
+for (var keys in colors){
+    console.log(keys+ '->' + colors[keys])
+}
+
+console.log('\n')
+//for in Arrays
+
+colorArrays = ['red', 'blue', 'green', 'yellow']
+
+for (var keys in colorArrays){
+    console.log(keys+ '->' + colorArrays[keys])
+}
+
+//Arrays are also objects whose keys are just index.
+
+console.log('\n')
+//for of loop are for iterable datastructures like,
+// Arrays, String, many moree.
+
+var scores = [60,90,80,75]
+
+for (var results of scores){
+    console.log(results)
+}
+// Here the iterating variable is the value of 
+//the index of the arrays
+console.log('\n')
+//Entries method to get the index in  for of loop
+for (var [index, results] of scores.entries()){
+    console.log(index+'->'+ results)
+}
+
+
+console.log('\n')
+//for of a string
+myString = 'safayed'
+
+for (var ab of myString ){
+    console.log(ab, '\n')
 }
