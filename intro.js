@@ -203,3 +203,15 @@ myString = 'safayed'
 for (var ab of myString ){
     console.log(ab, '\n')
 }
+////////////////////////////////////////////////////////////////////
+
+//////////// FUNCTIONS 
+
+//////////////////////////////////////////////////////////////////
+
+function funcName (parameter){
+// write code here
+console.log('\nMy Name is ', parameter)
+}
+
+funcName('Safayed')
