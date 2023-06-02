@@ -215,3 +215,37 @@ console.log('\nMy Name is ', parameter)
 }
 
 funcName('Safayed')
+
+
+//Function in expression
+
+var add = function(a,b){
+
+    return a+b
+}
+
+console.log('\nThis is the result of the expression function ',add(10,5));
+
+// this function has no name hence
+// it is called a anonymous function
+// the variable add is where this nameless function is assign
+
+
+var sum = add
+
+console.log('does the same job as add',sum(12,12));
+
+// variable sum is assign add so the anonymous
+
+
+//ES6
+
+//problem with var 
+// var can be redecalred with same identifer 
+
+
+var sa = 12;
+//redecalration
+var sa = 24;
+
+
