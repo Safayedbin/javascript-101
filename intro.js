@@ -225,11 +225,11 @@ var add = function(a,b){
 }
 
 console.log('\nThis is the result of the expression function ',add(10,5));
-
-// this function has no name hence
-// it is called a anonymous function
-// the variable add is where this nameless function is assign
-
+/*
+ this function has no name hence
+ it is called a anonymous function
+ the variable add is where this nameless function is assign
+*/
 
 var sum = add
 
@@ -238,14 +238,108 @@ console.log('does the same job as add',sum(12,12));
 // variable sum is assign add so the anonymous
 
 
+/*
+expression function helps to avoid hoisting that is 
+calling a function before decalaring it gives an error.
+below is an example 
+*/
+
+// example1();
+
+// let example1 = function (){
+//     console.log('example 1 function');
+// }
+
+/*
+Above code if uncomment gives error as anonymous 
+makes it compulsory to inititalize a a function before 
+calling it 
+*/
+
 //ES6
 
 //problem with var 
 // var can be redecalred with same identifer 
-
+// var can be access outside of a scope 
 
 var sa = 12;
 //redecalration
 var sa = 24;
 
 
+if(true){
+    var samba= "inside if"
+}
+/*
+var samba is being access outside of a scope of a
+if statement
+*/
+console.log(samba);
+
+
+
+// using of let is solves the redeclaration problem
+
+let bobo = "sad";
+
+//uncomment to get error in running code
+//let bobo = "mad";
+
+/*
+const does the same this it does not let redeclaration
+and reassign of variable again
+*/
+
+
+
+/*
+
+          Redecalration | Reassignment | Scope
+    var        V        |      V       |  Funtion
+    let        X        |      V       |  Blocks
+    const      X        |      X       |  Blocks
+
+
+*/
+
+
+////////////////////////////////////////////////////
+//                   ARROW FUNCTION
+///////////////////////////////////////////////////
+
+//SYNTAX
+
+let example2 = () => console.log("Arrow one")
+
+//OR
+
+
+let example3 = () =>{
+    console.log("Arrow two")
+} 
+
+//OR
+
+let example4 = a =>{
+    console.log("Arrow three and parameter", a)
+} 
+//printing
+
+example2()
+example3()
+example4(56)
+
+
+// Template literal 
+
+/*
+when using Api and product development variable changes and according all athe vvaluse shalla change
+this below syntax how we write template literal
+*/
+
+ let name = 'Safayed'
+
+ // it's is not quotation or Double quotaion
+ // it's called back qoute
+ // Or Acute
+ console.log(`Hello Greeting ${name}`);
