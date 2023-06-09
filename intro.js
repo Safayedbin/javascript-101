@@ -153,6 +153,12 @@ while (a<10){
     console.log('while loop ', a);
 }
 console.log('\n')
+
+
+
+
+
+
 //For in
 
 //to iterate all values inside a Object
@@ -168,7 +174,11 @@ for (var keys in colors){
 }
 
 console.log('\n')
-//for in Arrays
+
+
+
+
+//For in Arrays
 
 colorArrays = ['red', 'blue', 'green', 'yellow']
 
@@ -179,7 +189,11 @@ for (var keys in colorArrays){
 //Arrays are also objects whose keys are just index.
 
 console.log('\n')
-//for of loop are for iterable datastructures like,
+
+
+
+
+//fOR OF LOOP are for iterable datastructures like,
 // Arrays, String, many moree.
 
 var scores = [60,90,80,75]
@@ -337,9 +351,50 @@ when using Api and product development variable changes and according all athe v
 this below syntax how we write template literal
 */
 
- let name = 'Safayed'
+let name = 'Safayed'
 
- // it's is not quotation or Double quotaion
- // it's called back qoute
- // Or Acute
- console.log(`Hello Greeting ${name}`);
+// it's is not quotation or Double quotaion
+// it's called back qoute
+// Or Acute
+
+console.log(`Hello Greeting ${name}`);
+
+
+
+/////////////////////////////////////////////////////////////
+/////////////////////DESTRUCTING STRUCTURES/////////////////////
+////////////////////////////////////////////////////////////
+
+
+// unpacks values in a array or objects into distinct values
+
+//DESTRUCTING ARRAY
+let myarr= [1, 2,3,4,]
+let [a1, b1, c, d] = myarr
+
+console.log(a1)
+
+// if any value is empty then it shows undefine
+
+// DESTRUCTING OBJECTS
+
+let myobj2= {
+    name : 'safayed',
+    id : '011193080',
+    gender : 'Male',
+    CGPA : '3.5',
+    Address: {
+        City: 'Dhaka',
+        house: '360',
+        road: '4' 
+    }
+
+}
+
+let {name : n , id, gender, CGPA, Address:{City : c1}}= myobj2
+
+console.log(n)
+console.log(id)
+console.log(gender)
+console.log(CGPA)
+console.log(c1)
